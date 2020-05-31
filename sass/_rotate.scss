@@ -1,7 +1,7 @@
 .rotate{
     margin: 0 auto;
     padding-top: 50px;
-    height: 800px;
+    height: 600px;
     background:skyblue;
     box-sizing: border-box;
 }
@@ -18,7 +18,7 @@
    // height: 100%;
     position: absolute;
     float: right;
-    animation: rotate 20s infinite linear;
+    animation: rotate 40s infinite linear;
     transform-style: preserve-3d;
 }
 .rotate__content-imgs:hover{
@@ -33,23 +33,18 @@
     position: absolute;
 }
 .rotate__content-imgs figure:nth-child(1){
-    transform: rotateY(0deg) translateZ(300px);
+    transform: rotateY(0deg) translateZ(125px);
 }
 .rotate__content-imgs figure:nth-child(2){
-    transform: rotateY(60deg) translateZ(300px);
+    transform: rotateY(90deg) translateZ(125px);
 }
 .rotate__content-imgs figure:nth-child(3){
-    transform: rotateY(120deg) translateZ(300px);
+    transform: rotateY(180deg) translateZ(125px);
 }
 .rotate__content-imgs figure:nth-child(4){
-    transform: rotateY(180deg) translateZ(300px);
+    transform: rotateY(270deg) translateZ(125px);
 }
-.rotate__content-imgs figure:nth-child(5){
-    transform: rotateY(240deg) translateZ(300px);
-}
-.rotate__content-imgs figure:nth-child(6){
-    transform: rotateY(300deg) translateZ(300px);
-}
+
 
 .rotate__content-imgs img:hover{
     transform: scale(1.5);

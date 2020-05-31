@@ -1,0 +1,91 @@
+.book{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    height: 500px;
+}
+
+.book__container{
+    width: 350px;
+    height: 500px;
+    background-color: teal;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    perspective: 5000px;
+    box-shadow: 3px 3px 15px black;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-left: 30px;
+    color: white;
+    text-align: center;
+    transform-origin:right;
+    transform-style: preserve-3d;
+}
+.page__1{
+    width: 350px;
+    height: 100%;
+    
+    //background-color: darkslategray;
+    box-shadow: 3px 3px 15px black;
+    transform-style: preserve-3d;
+    //animation-play-state: ;
+    transform-origin: left;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform:rotateY(-40deg);
+    -moz-transform-origin: left;
+    transition: all 5s ease;
+    
+}
+
+
+.page__1__front{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    //background-color: palegreen;
+    img{
+        height: 100%;
+        width: 100%;
+    }
+}
+.book__container:hover .page__1{
+    transform: rotateY(-180deg);
+}
+
+.page__1__back{
+    margin: 0;
+    display: block;
+    backface-visibility: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0px;
+    transform-origin: center;
+    transform: rotateY(180deg);
+    img{
+        height: 100%;
+        width: 100%;
+    }
+   // background-size: cover;
+   // background-position: center;
+}
+/*
+.book__container:hover .page__1__front{
+    transform-origin: left;
+   // animation: turn 40s linear;
+    transform:skewY(0) rotateY(-180deg);
+}
+.book__container:hover .page__1__back{
+    transform-origin: left;
+   // animation: turn 40s linear;
+    transform:skewY(0) rotateY(0deg);
+}
+*/
