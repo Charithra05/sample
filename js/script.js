@@ -5,4 +5,12 @@ $(document).ready(function(){
     },{
         offset:'50'
     })
+
+
+    $(".header").click(function(){
+        $(this).addClass(".scroll__content");
+    })
+
+
 });
+
